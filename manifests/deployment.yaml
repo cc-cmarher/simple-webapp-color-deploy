@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    run: webapp-color
+  name: webapp-color
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      run: webapp-color
+  template:
+    metadata:
+      labels:
+        run: webapp-color
+    spec:
+      containers:
+      - image: kukoarmas/webapp-color
+        name: webapp-color
+        envFrom:
+        - secretRef:
+                name: webapp-config
