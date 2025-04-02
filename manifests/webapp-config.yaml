@@ -1,6 +1,6 @@
 apiVersion: v1
 data:
-  APP_COLOR: b3Jhbmdl
+  APP_COLOR: Ymx1ZQ==
 kind: Secret
 metadata:
   creationTimestamp: null
