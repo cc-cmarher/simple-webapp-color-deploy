@@ -1,7 +1,21 @@
-apiVersion: v1
-data:
-  APP_COLOR: Z3JlZW4=
-kind: Secret
-metadata:
-  creationTimestamp: null
-  name: webapp-config
+{
+  "kind": "SealedSecret",
+  "apiVersion": "bitnami.com/v1alpha1",
+  "metadata": {
+    "name": "webapp-config",
+    "namespace": "webapp-production",
+    "creationTimestamp": null
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "name": "webapp-config",
+        "namespace": "webapp-production",
+        "creationTimestamp": null
+      }
+    },
+    "encryptedData": {
+      "APP_COLOR": "AgBxaheHeIqKDWL6JGd0arw9I163Hcql7Qj9afocCQKoYQzvU/L01qtVj/o5uS4VCX0n8oNlku/gW4VJQfSWyTH38LbeZZ/kDZF39wSJJHq1AC/8Ufz8TzwD2wIG0RZ+5qKFfzyZCu1jhbBV8LK38JGWG0Ima7JjAzBTW2LC1osZijN+49WA6JwpFn9xv724Rix+nD85+NGV4Xyh4isWuFxySx6Fl+Z3daff5/yiXauatHB064iisu0VXyri+0rIDTQecn/azIdK32H5pubPjmZx3wQ3hSu7kg2Cloi/aSAm+BNmAFjQUtfr8R0QNXmKWZJia0qWVj0gxoS0MpKkNM7aKjCiG96pXu20EscC/YSU520/12xPj+1ebKcRUZizhBbgo0BMeZsRuMf2o2bOtU39EfW63ojfPnpWmvg0/GQ1TJRj6WpOrykcTP/ia4/YDrXDp+0ZWQ85eQyVdDdPiFJ3+oZq3nklWEYe76Q9bmiEFOsAShYYqk7JKxPzYvOEQFCVLeRzw05D0BBbkhiDAVIFvQOhQlCIpbFV3aW8aRa0pWibJjHOcKmYkH6mQ/+2F93SSAN3Rmt66RoMfOyuo5uh3MTt5d6A55vNBNZi1208MDq7ZvJ9iFl3HRCXBg9K7wT5F+s7ylOP918vLCQxAtREqbwHfZHFhYLEOXOd3QYSTfuswGkbgiuZw8Lz5hO2DWdQ4IZY"
+    }
+  }
+}
